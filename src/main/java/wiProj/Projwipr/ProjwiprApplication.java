@@ -3,7 +3,7 @@ package wiProj.Projwipr;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import wiProj.Projwipr.CompareEngine.compare;
+
 import wiProj.Projwipr.controller.controller;
 
 
@@ -15,14 +15,14 @@ public class ProjwiprApplication {
 
 
 
-static compare c=new compare();
+
 
 
 		public static void main(String[] args)throws IOException {
             new File(controller.uploadingDir).mkdirs();
 
+            new File(controller.uploadingDirec).mkdirs();
 
-            c.compare();
             SpringApplication.run(ProjwiprApplication.class, args);
         }
 
